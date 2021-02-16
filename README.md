@@ -20,9 +20,15 @@ Why not pay $20 for auth.gg lifetime and buy a 5$ server every month
 Very Grown Man - 25 Years Old With Kids And A Wife
 You know he gets mad when he talks about money (from beaming people doesnt actually have a job)
 ![maul-skisd](https://media.discordapp.net/attachments/804419438706556938/810971471382839376/unknown.png)
+
+
 Also talks about making 2k a day but has had a $200 vaccum cleaner in his amazon wish list for 9 months
 ![maul-skissd](https://media.discordapp.net/attachments/810736212452179968/811202391823220746/unknown.png)
+
+
 Stay nad hoes mad
+
+
 ![mausl-skissd](https://media.discordapp.net/attachments/795624569846366260/811202822820724806/unknown.png)
 
 
