@@ -9,8 +9,11 @@ Stop Beaming People Sir
 # Check Out The Source To Safeguards DLL
 https://github.com/AuraAlways/Safeguard-DLL
 This Was Also Deobfuscated By 0xFuji But Mine Has The Deobfuscated DLL Which His Does Not
+
 ¯\_(ツ)_/¯
 
 # Why Pay So Much To Keep Your API's Safe?
-AES-256-CBC memes
+We all know your paying to keep your APIS Safe And Secure But Its Just AES-256-CBC and the keys are public. Its in the DLL Above
+Why not pay $20 for auth.gg lifetime and buy a 5$ server every month
+
 
