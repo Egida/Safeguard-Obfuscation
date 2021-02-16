@@ -1,0 +1,13 @@
+<project outputDir="C:\Users\Nicho\Downloads\Project_r\Project r\Obf" baseDir="C:\Users\Nicho\Downloads\Project_r\Project r" xmlns="http://confuser.codeplex.com">
+  <module path="ProjectRadiation.exe">
+    <rule pattern="true" preset="minimum" inherit="false">
+      <protection id="constants" />
+      <protection id="Rename Module" />
+      <protection id="Const disint" />
+      <protection id="invalid metadata" />
+      <protection id="Anti Debug Antinet" />
+      <protection id="anti debug" />
+      <protection id="anti tamper" />
+    </rule>
+  </module>
+</project>

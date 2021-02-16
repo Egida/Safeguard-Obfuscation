@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Aura\Desktop\OnyxAPI.ONLINE\Memes\Executable\ConfuserEx.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B38224D-2902-44E1-9B64-3E6B28619C9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ConfuserEx</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ConfuserEx</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Confuser.Core">
+      <HintPath>lib\Confuser.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Confuser.Renamer">
+      <HintPath>lib\Confuser.Renamer.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.WPF4">
+      <HintPath>lib\GalaSoft.MvvmLight.WPF4.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs.Wpf">
+      <HintPath>lib\Ookii.Dialogs.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="XamlGeneratedNamespace\GeneratedInternalTypeHelper.cs" />
+    <Compile Include="BrushToColorConverter.cs" />
+    <Compile Include="ComponentConverter.cs" />
+    <Compile Include="ComponentDiscovery.cs" />
+    <Compile Include="BoolToVisibilityConverter.cs" />
+    <Compile Include="EnumValuesExtension.cs" />
+    <Compile Include="FileDragDrop.cs" />
+    <Compile Include="InvertBoolConverter.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="ViewModel\IRuleContainer.cs" />
+    <Compile Include="ViewModel\ProjectRuleVM.cs" />
+    <Compile Include="ViewModel\ProjectSettingVM`1.cs" />
+    <Compile Include="ViewModel\StringItem.cs" />
+    <Compile Include="ViewModel\AboutTabVM.cs" />
+    <Compile Include="ViewModel\AppVM.cs" />
+    <Compile Include="ViewModel\IViewModel`1.cs" />
+    <Compile Include="ViewModel\ProjectModuleVM.cs" />
+    <Compile Include="ViewModel\ProjectTabVM.cs" />
+    <Compile Include="ViewModel\ProjectVM.cs" />
+    <Compile Include="ViewModel\ProtectTabVM.cs" />
+    <Compile Include="ViewModel\SettingsTabVM.cs" />
+    <Compile Include="ViewModel\TabViewModel.cs" />
+    <Compile Include="ViewModel\Utils.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="ViewsProjectTabAdvancedView.xaml.cs">
+      <DependentUpon>viewsprojecttabadvancedview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Skin.xaml.cs">
+      <DependentUpon>skin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StackTraceDecoder.xaml.cs">
+      <DependentUpon>stacktracedecoder.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewsProjectRuleView.xaml.cs">
+      <DependentUpon>viewsprojectruleview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewsProjectModuleView.xaml.cs">
+      <DependentUpon>viewsprojectmoduleview.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CompComboBox.xaml.cs">
+      <DependentUpon>compcombobox.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="confuserex.ico" />
+    <Resource Include="resources\decode.png" />
+    <Resource Include="resources\error.png" />
+    <Resource Include="resources\fontawesome.otf" />
+    <Resource Include="resources\new.png" />
+    <Resource Include="resources\open.png" />
+    <Resource Include="resources\save.png" />
+    <Resource Include="resources\teamlogo.png" />
+    <Resource Include="resources\tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="compcombobox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mainwindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="skin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="stacktracedecoder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\abouttabview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\projectmoduleview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\projectruleview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\projecttabadvancedview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\projecttabview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\protecttabview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="views\settingstabview.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

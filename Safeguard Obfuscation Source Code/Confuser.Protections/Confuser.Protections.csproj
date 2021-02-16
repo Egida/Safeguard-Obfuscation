@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C6ED61C-D1EE-4468-8E36-091ECB65175F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Confuser.Protections</RootNamespace>
+    <AssemblyName>Confuser.Protections</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dnlib">
+      <HintPath>..\..\k\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="AntiDebugProtection.cs" />
+    <Compile Include="AntiDebugProtection2.cs" />
+    <Compile Include="AntiDumpProtection.cs" />
+    <Compile Include="AntiDumpProtection2.cs" />
+    <Compile Include="AntiILDasmProtection.cs" />
+    <Compile Include="AntiILDasmProtection2.cs" />
+    <Compile Include="AntiILDasmProtection3.cs" />
+    <Compile Include="AntiTamperProtection.cs" />
+    <Compile Include="AntiTamper\DynamicDeriver.cs" />
+    <Compile Include="AntiTamper\IKeyDeriver.cs" />
+    <Compile Include="AntiTamper\IModeHandler.cs" />
+    <Compile Include="AntiTamper\JITBodyIndex.cs" />
+    <Compile Include="AntiTamper\JITEHClause.cs" />
+    <Compile Include="AntiTamper\JITMethodBody.cs" />
+    <Compile Include="AntiTamper\JITMethodBodyWriter.cs" />
+    <Compile Include="AntiTamper\JITMode.cs" />
+    <Compile Include="AntiTamper\Mode.cs" />
+    <Compile Include="AntiTamper\NormalDeriver.cs" />
+    <Compile Include="AntiTamper\NormalMode.cs" />
+    <Compile Include="Compressor.cs" />
+    <Compile Include="Compress\CompressorContext.cs" />
+    <Compile Include="Compress\DynamicDeriver.cs" />
+    <Compile Include="Compress\ExtractPhase.cs" />
+    <Compile Include="Compress\IKeyDeriver.cs" />
+    <Compile Include="Compress\Mode.cs" />
+    <Compile Include="Compress\NormalDeriver.cs" />
+    <Compile Include="Compress\StubProtection.cs" />
+    <Compile Include="ConstantProtection.cs" />
+    <Compile Include="Constants\CEContext.cs" />
+    <Compile Include="Constants\DecoderDesc.cs" />
+    <Compile Include="Constants\DynamicMode.cs" />
+    <Compile Include="Constants\EncodeElements.cs" />
+    <Compile Include="Constants\EncodePhase.cs" />
+    <Compile Include="Constants\IEncodeMode.cs" />
+    <Compile Include="Constants\InjectPhase.cs" />
+    <Compile Include="Constants\Mode.cs" />
+    <Compile Include="Constants\NormalMode.cs" />
+    <Compile Include="Constants\ReferenceReplacer.cs" />
+    <Compile Include="Constants\x86Mode.cs" />
+    <Compile Include="ControlFlowProtection.cs" />
+    <Compile Include="ControlFlow\BlockBase.cs" />
+    <Compile Include="ControlFlow\BlockParser.cs" />
+    <Compile Include="ControlFlow\BlockType.cs" />
+    <Compile Include="ControlFlow\CFContext.cs" />
+    <Compile Include="ControlFlow\CFType.cs" />
+    <Compile Include="ControlFlow\ControlFlowPhase.cs" />
+    <Compile Include="ControlFlow\ExpressionPredicate.cs" />
+    <Compile Include="ControlFlow\InstrBlock.cs" />
+    <Compile Include="ControlFlow\IPredicate.cs" />
+    <Compile Include="ControlFlow\JumpMangler.cs" />
+    <Compile Include="ControlFlow\ManglerBase.cs" />
+    <Compile Include="ControlFlow\NormalPredicate.cs" />
+    <Compile Include="ControlFlow\PredicateType.cs" />
+    <Compile Include="ControlFlow\ScopeBlock.cs" />
+    <Compile Include="ControlFlow\SwitchMangler.cs" />
+    <Compile Include="ControlFlow\x86Predicate.cs" />
+    <Compile Include="CtrlFlowModProtection.cs" />
+    <Compile Include="CtrlFlowMod\BlockBase.cs" />
+    <Compile Include="CtrlFlowMod\BlockParser.cs" />
+    <Compile Include="CtrlFlowMod\BlockType.cs" />
+    <Compile Include="CtrlFlowMod\CFContext.cs" />
+    <Compile Include="CtrlFlowMod\CFType.cs" />
+    <Compile Include="CtrlFlowMod\ControlFlowPhase.cs" />
+    <Compile Include="CtrlFlowMod\ExpressionPredicate.cs" />
+    <Compile Include="CtrlFlowMod\InstrBlock.cs" />
+    <Compile Include="CtrlFlowMod\IPredicate.cs" />
+    <Compile Include="CtrlFlowMod\JumpMangler.cs" />
+    <Compile Include="CtrlFlowMod\ManglerBase.cs" />
+    <Compile Include="CtrlFlowMod\NormalPredicate.cs" />
+    <Compile Include="CtrlFlowMod\PredicateType.cs" />
+    <Compile Include="CtrlFlowMod\ScopeBlock.cs" />
+    <Compile Include="CtrlFlowMod\SwitchMangler.cs" />
+    <Compile Include="CtrlFlowMod\x86Predicate.cs" />
+    <Compile Include="DisConstConfusion.cs" />
+    <Compile Include="DupCtrlFlowModProtection.cs" />
+    <Compile Include="DupCtrlFlowModService.cs" />
+    <Compile Include="DupCtrlFlowMod\BlockBase.cs" />
+    <Compile Include="DupCtrlFlowMod\BlockParser.cs" />
+    <Compile Include="DupCtrlFlowMod\BlockType.cs" />
+    <Compile Include="DupCtrlFlowMod\CFContext.cs" />
+    <Compile Include="DupCtrlFlowMod\CFType.cs" />
+    <Compile Include="DupCtrlFlowMod\ControlFlowPhase.cs" />
+    <Compile Include="DupCtrlFlowMod\ExpressionPredicate.cs" />
+    <Compile Include="DupCtrlFlowMod\InstrBlock.cs" />
+    <Compile Include="DupCtrlFlowMod\IPredicate.cs" />
+    <Compile Include="DupCtrlFlowMod\JumpMangler.cs" />
+    <Compile Include="DupCtrlFlowMod\ManglerBase.cs" />
+    <Compile Include="DupCtrlFlowMod\NormalPredicate.cs" />
+    <Compile Include="DupCtrlFlowMod\PredicateType.cs" />
+    <Compile Include="DupCtrlFlowMod\ScopeBlock.cs" />
+    <Compile Include="DupCtrlFlowMod\SwitchMangler.cs" />
+    <Compile Include="DupCtrlFlowMod\x86Predicate.cs" />
+    <Compile Include="DupCtrlFlowService.cs" />
+    <Compile Include="FakeNative.cs" />
+    <Compile Include="IAntiTamperService.cs" />
+    <Compile Include="IConstantService.cs" />
+    <Compile Include="IControlFlowService.cs" />
+    <Compile Include="ICtrlFlowModService.cs" />
+    <Compile Include="IDupControlFlowService2.cs" />
+    <Compile Include="IMildReferenceProxyService.cs" />
+    <Compile Include="InvalidMetadataProtection.cs" />
+    <Compile Include="IReferenceProxyService.cs" />
+    <Compile Include="MildReferenceProxyProtection.cs" />
+    <Compile Include="MildReferenceProxy\EncodingType.cs" />
+    <Compile Include="MildReferenceProxy\ExpressionEncoding.cs" />
+    <Compile Include="MildReferenceProxy\IRPEncoding.cs" />
+    <Compile Include="MildReferenceProxy\MildMode.cs" />
+    <Compile Include="MildReferenceProxy\MildReferenceProxyPhase.cs" />
+    <Compile Include="MildReferenceProxy\Mode.cs" />
+    <Compile Include="MildReferenceProxy\NormalEncoding.cs" />
+    <Compile Include="MildReferenceProxy\RPContext.cs" />
+    <Compile Include="MildReferenceProxy\RPMode.cs" />
+    <Compile Include="MildReferenceProxy\StrongMode.cs" />
+    <Compile Include="MildReferenceProxy\x86Encoding.cs" />
+    <Compile Include="MyHeap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferenceProxyProtection.cs" />
+    <Compile Include="ReferenceProxy\EncodingType.cs" />
+    <Compile Include="ReferenceProxy\ExpressionEncoding.cs" />
+    <Compile Include="ReferenceProxy\IRPEncoding.cs" />
+    <Compile Include="ReferenceProxy\MildMode.cs" />
+    <Compile Include="ReferenceProxy\Mode.cs" />
+    <Compile Include="ReferenceProxy\NormalEncoding.cs" />
+    <Compile Include="ReferenceProxy\ReferenceProxyPhase.cs" />
+    <Compile Include="ReferenceProxy\RPContext.cs" />
+    <Compile Include="ReferenceProxy\RPMode.cs" />
+    <Compile Include="ReferenceProxy\StrongMode.cs" />
+    <Compile Include="ReferenceProxy\x86Encoding.cs" />
+    <Compile Include="ResourceProtection.cs" />
+    <Compile Include="ResourceProtection2.cs" />
+    <Compile Include="Resources2\DynamicMode.cs" />
+    <Compile Include="Resources2\IEncodeMode.cs" />
+    <Compile Include="Resources2\InjectPhase.cs" />
+    <Compile Include="Resources2\MDPhase.cs" />
+    <Compile Include="Resources2\Mode.cs" />
+    <Compile Include="Resources2\NormalMode.cs" />
+    <Compile Include="Resources2\REContext.cs" />
+    <Compile Include="Resources\DynamicMode.cs" />
+    <Compile Include="Resources\IEncodeMode.cs" />
+    <Compile Include="Resources\InjectPhase.cs" />
+    <Compile Include="Resources\MDPhase.cs" />
+    <Compile Include="Resources\Mode.cs" />
+    <Compile Include="Resources\NormalMode.cs" />
+    <Compile Include="Resources\REContext.cs" />
+    <Compile Include="StackUnfConfusion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Confuser.Core.2\Confuser.Core.2.csproj">
+      <Project>{4c6ed61c-d1ee-4468-8e36-091ecb65175c}</Project>
+      <Name>Confuser.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Confuser.DynCipher\Confuser.DynCipher.csproj">
+      <Project>{4c6ed61c-d1ee-4468-8e36-091ecb65175e}</Project>
+      <Name>Confuser.DynCipher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Confuser.Renamer\Confuser.Renamer.csproj">
+      <Project>{4c6ed61c-d1ee-4468-8e36-091ecb651760}</Project>
+      <Name>Confuser.Renamer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
