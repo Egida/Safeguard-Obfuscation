@@ -26,7 +26,7 @@ You know he gets mad when he talks about money (from beaming people doesnt actua
 ![maul-skissd](https://media.discordapp.net/attachments/810736212452179968/811202391823220746/unknown.png)
 
 
-Stay nad hoes mad
+Stay mad hoes mad
 
 
 # ![mausl-skissd](https://media.discordapp.net/attachments/795624569846366260/811202822820724806/unknown.png)
